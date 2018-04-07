@@ -1,5 +1,5 @@
 /**
- * Componente que contiene el contenido de la página
+ * Componente que contiene el contenido de la cabecera de página
  */
 import {Component} from '@angular/core';
 
