@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular';
+  curso = 'Angular';
+  alumno = 'Juan Pedro Sánchez Álvarez';
+  empresa = 'Grupo Preving';
 }
