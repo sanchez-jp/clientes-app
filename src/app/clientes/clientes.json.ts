@@ -1,5 +1,9 @@
 import {Cliente} from './cliente';
 
+/**
+ * Array de objetos de tipo cliente en formato JSON
+ * @type {{id: number; nombre: string; apellido: string; email: string; createAt: string}[]}
+ */
 export const CLIENTES: Cliente[] = [
   {id: 1, nombre: 'Juan Pedro', apellido: 'Sánchez', email: 'juanpedro.sanchez@preving.com', createAt: '2017/12/11'},
   {id: 2, nombre: 'María', apellido: 'de la Fuente', email: 'delafmaria@gmail.com', createAt: '2018/05/01'},
