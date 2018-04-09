@@ -52,4 +52,13 @@ export class ClienteService {
     return this.http.get<Cliente>(`${this.urlEndPoint}/${id}`);
   }
 
+  /**
+   * Actualiza los datos de un cliente
+   * @param {Cliente} cliente objeto cliente con los datos actualizados
+   * @returns {Observable<Cliente>} Observable del cliente actualizado
+   */
+  update(cliente: Cliente): Observable<Cliente> {
+    return this.http.put<Cliente>(`${this.urlEndPoint}/${cliente.id}`, cliente, {headers: this.httpHeaders});
+  }
+
 }
