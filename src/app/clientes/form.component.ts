@@ -7,8 +7,8 @@ import {Cliente} from './cliente';
 })
 export class FormComponent implements OnInit {
 
-  private cliente: Cliente = new Cliente();
-  private titulo = 'Crear cliente';
+  cliente: Cliente = new Cliente();
+  titulo = 'Crear cliente';
 
   constructor() {
   }
