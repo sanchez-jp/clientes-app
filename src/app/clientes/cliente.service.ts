@@ -43,4 +43,13 @@ export class ClienteService {
     return this.http.post<Cliente>(this.urlEndPoint, cliente, {headers: this.httpHeaders});
   }
 
+  /**
+   * Muestra los datos de un cliente determinado
+   * @param {number} id el identificador del cliente a mostrar
+   * @returns {Observable<Cliente>}
+   */
+  getCliente(id): Observable<Cliente> {
+    return this.http.get<Cliente>(`${this.urlEndPoint}/${id}`);
+  }
+
 }
