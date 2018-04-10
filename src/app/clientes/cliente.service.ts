@@ -61,4 +61,13 @@ export class ClienteService {
     return this.http.put<Cliente>(`${this.urlEndPoint}/${cliente.id}`, cliente, {headers: this.httpHeaders});
   }
 
+  /**
+   * Elimina a un cliente de la lista
+   * @param {number} id el identificador del cliente a eliminar
+   * @returns {Observable<Cliente>} Observable del cliente eliminado
+   */
+  delete(id: number): Observable<Cliente> {
+    return this.http.delete<Cliente>(`${this.urlEndPoint}/${id}`, {headers: this.httpHeaders});
+  }
+
 }
